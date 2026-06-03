@@ -1,0 +1,10 @@
+{
+  "name": "listening-coach-extension",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "better-sqlite3": "^11.9.1",
+    "dotenv": "^16.4.7",
+    "fuzzball": "^2.1.2"
+  }
+}

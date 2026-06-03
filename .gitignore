@@ -1,0 +1,6 @@
+node_modules
+dist
+audio/*.mp3
+data/listening.db
+.env
+*.log

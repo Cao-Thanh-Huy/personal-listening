@@ -1,0 +1,39 @@
+{
+  "applicationId": "com.listening-coach.app",
+  "version": "1.0.0",
+  "defaultPort": 0,
+  "documentRoot": "/dist",
+  "url": "/",
+  "enableServer": true,
+  "enableNativeAPI": true,
+  "nativeAllowList": [
+    "app.*",
+    "window.*",
+    "os.*",
+    "storage.*",
+    "filesystem.*",
+    "events.*",
+    "extensions.*"
+  ],
+  "modes": {
+    "window": {
+      "title": "Listening Coach",
+      "width": 400,
+      "height": 300,
+      "exitProcessOnClose": true
+    }
+  },
+  "cli": {
+    "binaryName": "listening-coach",
+    "resourcesPath": "dist",
+    "extensionsPath": "extensions",
+    "distributionPath": "dist-build",
+    "binaryVersion": "6.8.0"
+  },
+  "extensions": [
+    {
+      "id": "listener",
+      "command": "node extensions/index.js"
+    }
+  ]
+}
